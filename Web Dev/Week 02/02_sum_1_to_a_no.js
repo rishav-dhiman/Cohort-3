@@ -6,5 +6,5 @@ function sum(n){
     return sum;
 }
 
-ans = sum(100)
+const ans = sum(100)
 console.log(ans);
