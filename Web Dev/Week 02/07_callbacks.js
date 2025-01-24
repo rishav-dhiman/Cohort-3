@@ -14,3 +14,6 @@ function readFile(filePath, encoding, op) {
     // read file
     op("Error!!", "hi there")
 }
+
+
+// when any operation require web apis or anything that is IO intensive , then we require callbacks
