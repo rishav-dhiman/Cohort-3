@@ -11,15 +11,21 @@ class Rectangle{
 
     area(){
         const area = this.width * this.height;
+        console.log(this);
         return area;
     }
 
     paint(){
-        console.log(`Painting with color ${this.color}`);
+        console.log("Color is " + this.color);
+    }
+
+    destroy(){
+
     }
 }
 
-const rect = new Rectangle(2, 4, "Red");
+const rect = new Rectangle(2, 4, "Red"); 
+const rect2 = new Rectangle(20, 10, "Black"); 
 const area = rect.area();
-rect.paint();
+const area2 = rect2.area();
 console.log(area);
