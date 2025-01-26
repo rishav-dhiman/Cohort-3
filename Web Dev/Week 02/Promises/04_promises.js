@@ -24,4 +24,6 @@ function callback() {
     console.log("3 seconds have passed");
 }
 
-setTimeoutPromisified(3000).then(callback)
+setTimeoutPromisified(5000).then(callback);// syntactically cleaner
+
+// promises are syntactically superior way of writing callbacks
