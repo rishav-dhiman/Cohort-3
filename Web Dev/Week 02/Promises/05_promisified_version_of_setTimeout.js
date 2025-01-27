@@ -19,6 +19,7 @@ function random(resolve) { // resolve is also a function
 
 let p = new Promise(random); // supposed to return u something eventually
 
+// using the eventual value returned by the promise
 function callback() {
     console.log("promise succeeded");
 }
