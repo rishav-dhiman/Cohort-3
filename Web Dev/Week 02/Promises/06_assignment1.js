@@ -19,5 +19,4 @@ const p = readFile();
 function callback(contents) {
     console.log(contents);
 }
-// call the callback function with the contents of the file
 p.then(callback)
