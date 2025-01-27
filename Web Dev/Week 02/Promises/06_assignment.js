@@ -1,12 +1,23 @@
+// create the promisified version of fs.readFile, fs.writeFile, cleanFile
+
+
 const fs = require("fs");
 
-function cleanFile(filePath, callback) {
-    fs.readFile(filePath, "utf-8", )
-    data = data.trim();
-    callback();
+function readTheFile(sendTheFinalValueHere) {
+    fs.readFile("a.txt", "utf-8", function(err, data) {
+        sendTheFinalValueHere(data);
+    })
 }
 
-function onDone() {
-    console.log("file is cleaned");
+function readFile(fileName) {
+    // read the file and return its value
+    return new Promise(readTheFile);
 }
-cleanFile("a.txt", onDone)
+
+const p = readFile();
+
+function callback(contents) {
+    console.log(contents);
+}
+// call the callback function with the contents of the file
+p.then(callback)
