@@ -1,6 +1,6 @@
 // create the promisified version of fs.readFile, fs.writeFile, cleanFile
 
-
+// Promisified version of fs.readFile
 const fs = require("fs");
 
 function readTheFile(sendTheFinalValueHere) {
