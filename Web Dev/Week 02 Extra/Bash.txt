@@ -1,0 +1,22 @@
+pwd - print working directory - to check user directories
+
+cd - change directory
+
+ls - list the contents of the directory
+
+mkdir - make directory - to create a new directory folder
+
+touch - used to create any empty file of any type. eg - touch index.js, touch index.txt
+
+cat - it prints the contents of the file
+
+vi - vim command - used to edit a file - but not recommended
+
+mv - move any file - mv (file we want to move) (where we want to move)/ mv a.txt new-folder
+
+cp - copy any file - cp a.txt new-folder
+
+rm - remove/delete any file
+
+echo - to write anything. eg - echo "hello"
+
