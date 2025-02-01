@@ -1,5 +1,6 @@
 <html>
 	<body>
+		<div id="todoContainer"></div>
 		<input type="text" name="" id=""></input>
 		<button onclick="addTodo()">Add Todo!</button>
 	</body>
@@ -16,7 +17,7 @@
 			const newDivEl = document.createElement("div");
 			newDivEl.setAttribute("id", "todo-" + ctr);
 			newDivEl.innerHTML = "<div>" + value + "</div><button onclick='deleteTodo(" + ctr +")'>delete</button>";
-			document.querySelector("body").appendChild(newDivEl);
+			document.querySelector("#todoContainer").appendChild(newDivEl);
 			ctr = ctr + 1;
 		}
 	</script>
