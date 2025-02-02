@@ -1,0 +1,15 @@
+{
+  "name": "week-04",
+  "version": "1.0.0",
+  "description": "<!-- Node.js\r     - is an open sourse JS runtime that allows you to execute JavaScript code on the server side. \r     - uses V8 engine",
+  "main": "01_index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.4.1"
+  }
+}
