@@ -78,4 +78,14 @@ app.delete("/", function(req, res) {
     }
 })
 
+function isThereAtleastOneUnhealthyKidney() {
+    let atLeastOneUnhealthyKidney = false;
+    for (let i = 0; i<users[0].kidneys.length; i++) {
+        if (!users[0].kidneys[i].healthy) {
+                atLeastOneUnhealthyKidney = true;
+        }
+    }
+    return atLeastOneUnhealthyKidney
+}
+
 app.listen(3001);
