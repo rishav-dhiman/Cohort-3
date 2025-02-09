@@ -2,6 +2,16 @@ const express = require('express');
 
 const app = express();
 
+function isOldEnoughMiddleware(req, res, next) {
+    const age = req.query.age;
+    if (age >= 14) {
+        next();
+    } else {
+        res.json({
+            msg: "Sorry you are not of the age"
+        })
+    }
+}
 
 // app.use(isOldEnoughMiddleware); // another way of defining middlewares below this
 
